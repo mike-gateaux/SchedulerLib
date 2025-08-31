@@ -1,0 +1,10 @@
+[package]
+name = "gateaux/scheduler"
+version = "1.0.0"
+description = "Recreation of the task library to be used in more environments and receive more functions"
+authors = ["gateaux_dev"]
+license = "MIT"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
