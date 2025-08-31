@@ -1,6 +1,6 @@
 [package]
 name = "gateaux/scheduler"
-version = "1.0.0"
+version = "0.1.0"
 description = "Recreation of the task library to be used in more environments and receive more functions"
 authors = ["gateaux_dev"]
 license = "MIT"
