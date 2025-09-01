@@ -32,20 +32,21 @@ function task.wait(p)
 end
 
 function task.spawn(f, ...)
-	return coroutine.wrap(f)(...)
+	return {pcall(coroutine.wrap, f, ...)}[2]
 end
 
 function task.delay(p, f, ...)
 	local cancelled = false
+	local args = {...}
 
-	task.spawn(function(...)
+	task.spawn(function()
 		task.wait(p)
 
 		if not cancelled then
-			f(...)
+			f(unpack(args))
 			cancelled = true
 		end
-	end, ...)
+	end)
 
 	return {
 		cancel = function()
