@@ -2,5 +2,7 @@
   "name": "task",
   "tree": {
     "$path": "src"
-  }
+  },
+  "package": "Scheduler",
+  "wally": "gateaux/scheduler@0.1.0"
 }
